@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>UI SOFT Course</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <a href="index.html">
+          <div class="sidebar__logo">
+            <img src="./img/Logo.jpg" alt="logo" />
+          </div>
+        </a>
+        <ul class="sidebar__menu">
+          <li>
+            <a href="index.html">
+              <span class="sidebar__menu__img">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
+              <span class="sidebar__menu__text">Dashboard </span>
+            </a>
+          </li>
+          <li>
+            <a href="course.html" class="active">
+              <span class="sidebar__menu__img">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
+              <span class="sidebar__menu__text">Courses </span>
+            </a>
+          </li>
+          <li>
+            <a href="reception.html">
+              <span class="sidebar__menu__img">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
+              <span class="sidebar__menu__text">Reception</span>
+            </a>
+          </li>
+          <li>
+            <a href="teachers.html">
+              <span class="sidebar__menu__img">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
+              <span class="sidebar__menu__text">Teachers </span>
+            </a>
+          </li>
+          <li>
+            <a href="group.html">
+              <span class="sidebar__menu__img">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
+              <span class="sidebar__menu__text">Group </span>
+            </a>
+          </li>
+          <li>
+            <a href="news.html">
+              <span class="sidebar__menu__img">
+                <i class="bi bi-house-door-fill"></i>
+              </span>
+              <span class="sidebar__menu__text">News </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="navbar">
+          <div class="navbar-row">
+            <div class="navbar-left">
+              <div class="navbar-left-texts">
+                <p>Pages /<span>Dashboard</span></p>
+                <p class="navbar-title">Dashboard</p>
+              </div>
+            </div>
+            <div class="navbar-right">
+              <div class="navbar-input-img">
+                <img src="img/search.svg" alt="" />
+                <input
+                  class="navbar-search"
+                  type="search"
+                  placeholder="Type here..."
+                />
+              </div>
+              <div class="navbar-user">
+                <img src="img/user.png" alt="" />
+                <p>Sign In</p>
+              </div>
+              <div class="navbar-option">
+                <img src="img/option.svg" alt="" />
+              </div>
+              <div class="navbar-notification">
+                <img src="img/notifaction.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-titleh3">
+            <h3 class="main-title-h3">Popular courses</h3>
+            <button
+              class="Add"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add
+            </button>
+          </div>
+          <div class="main-card-dispilay-flekis course-row">
+            <!-- <div class="main-card">
+              <div class="main-card-img">
+                <img src="./img/Без названия.png" alt="" />
+                <button class="card-btn">
+                  <i
+                    class="bi bi-three-dots-vertical"
+                    class="main-card-img"
+                  ></i>
+                  <div class="card-btn-hover-buttons">
+                    <i class="bi bi-pencil-fill" style="color: blue"></i>
+                    <i class="bi bi-trash3-fill" style="color: red"></i>
+                  </div>
+                </button>
+              </div>
+              <h2 class="main-card-title">Frontend</h2>
+              <p>Duration:<span class="tekis-color"> 6 Month</span></p>
+              <p class="main-card-title-tekis">
+                Price:<span class="tekis-coolr2"> 800000UZS/Month</span>
+              </p>
+              <hr class="line" />
+              <p>The best course</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="message">Success</div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Course</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="modal-forms add-course">
+              <input
+                required=""
+                type="text"
+                placeholder="Enter course's name"
+                class="form-control mb-2 name"
+              /><input
+                required=""
+                type="text"
+                placeholder="Enter course image's URL"
+                class="form-control mb-2 img"
+              /><input
+                required=""
+                type="number"
+                placeholder="Enter course's price: UZS"
+                class="form-control mb-2 price"
+              /><input
+                required=""
+                type="number"
+                placeholder="Enter course's duration: Month"
+                class="form-control mb-2 duration"
+              /><textarea
+                required=""
+                placeholder="Course's description"
+                class="form-control mb-2 description"
+              ></textarea>
+              <button type="submit" class="btn btn-primary ">Save</button>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/course.js"></script>
+    <script src="./js/message.js"></script>
+  </body>
+</html>

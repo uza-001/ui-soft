@@ -1,0 +1,110 @@
+.main-card-dispilay-flekis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .main-card {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(175 175 175);
+    background-color: #fff;
+    // height: 360px;
+    width: 31%;
+    // margin: 35px 10px;
+    border-radius: 5%;
+    padding: 20px;
+  
+  
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 10%;
+  
+  
+    }
+  
+    .main-card-title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .main-card-title-tekis {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .main-card-img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .card-btn {
+        position: relative;
+        border: none;
+        background: transparent;
+  
+        .card-btn-hover-buttons {
+          display: none;
+          border-radius: 6px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.184);
+          background-color: #f8f9fa;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          height: 60px;
+          width: 40px;
+          position: absolute;
+          left: -30px;
+          cursor: pointer;
+        }
+      }
+  
+  
+      .card-btn:hover {
+        .card-btn-hover-buttons {
+          display: flex;
+        }
+      }
+    }
+  
+    .line {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .tekis-color {
+      color: #3ed758, ;
+    }
+  
+    .tekis-coolr2 {
+      color: #c30f1b;
+    }
+  }
+  
+  .main-card:nth-child(2){
+    // background-color: #f0f4d9;
+    .tekis-color{
+      color:rgb(27, 232, 27)
+    }
+  
+  }
+  
+  .content-titleh3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .content-titleh3 .Add{
+    background: linear-gradient(to bottom right, #cb0c9f, #7928ca);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: -0.332px;
+    outline: all 0.2s;
+    width: 60px;
+}
+  

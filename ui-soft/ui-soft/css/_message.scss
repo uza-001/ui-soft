@@ -1,0 +1,18 @@
+.message{
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: 0 0 10px #ccc;
+    position: absolute;
+    min-width: 200px;
+    border-radius: 5px;
+    border-bottom: 2px solid green;
+    top: 20px;
+    right: -200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.active{
+    right: 20px;
+}
